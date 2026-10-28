@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Project Launchpad | NxtWave Growth Challenge</title>
+<style>
+:root{--bg:#0b1020;--panel:#121a30;--panel2:#18223d;--text:#edf2ff;--muted:#a8b4d3;--accent:#8bf0c8;--accent2:#a9b7ff;--line:#2a3657;--warn:#ffd58a}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 80% 0%,#202c50 0,#0b1020 42%);font:15px/1.5 Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;color:var(--text)}
+.wrap{max-width:1120px;margin:auto;padding:24px}.nav{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:38px}.brand{font-weight:800;letter-spacing:.2px}.brand span{color:var(--accent)}.pill{border:1px solid var(--line);border-radius:999px;padding:7px 12px;color:var(--muted);font-size:12px}
+.hero{display:grid;grid-template-columns:1.25fr .75fr;gap:26px;align-items:center;margin-bottom:28px}.eyebrow{color:var(--accent);font-weight:700;text-transform:uppercase;letter-spacing:1.6px;font-size:11px}h1{font-size:clamp(36px,5vw,58px);line-height:1.03;letter-spacing:-2px;margin:12px 0 16px}.sub{color:var(--muted);max-width:610px;font-size:17px}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}button,.btn{border:0;border-radius:12px;padding:12px 16px;font-weight:750;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:8px}.primary{background:var(--accent);color:#0a1720}.secondary{background:var(--panel2);border:1px solid var(--line);color:var(--text)}.heroCard,.panel,.metric{background:linear-gradient(160deg,rgba(24,34,61,.96),rgba(16,24,44,.96));border:1px solid var(--line);border-radius:20px}.heroCard{padding:24px}.mini{font-size:12px;color:var(--muted)}.big{font-size:32px;font-weight:850;margin:7px 0}.progress{height:9px;background:#293653;border-radius:10px;overflow:hidden;margin:15px 0 8px}.progress span{display:block;height:100%;width:34%;background:linear-gradient(90deg,var(--accent),var(--accent2));border-radius:10px}.sectionTitle{display:flex;justify-content:space-between;align-items:end;gap:12px;margin:30px 0 14px}.sectionTitle h2{margin:0;font-size:22px}.sectionTitle p{margin:0;color:var(--muted);font-size:12px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.metric{padding:18px}.metric .num{font-size:28px;font-weight:850;margin:5px 0}.metric .label{color:var(--muted);font-size:12px}.layout{display:grid;grid-template-columns:1fr 1fr;gap:16px}.panel{padding:22px}.panel h3{margin:0 0 5px;font-size:18px}.panel p{margin:0 0 18px;color:var(--muted);font-size:13px}.field{display:grid;gap:6px;margin:12px 0}.field label{font-size:12px;color:var(--muted)}input,select{width:100%;padding:12px 13px;border-radius:10px;border:1px solid var(--line);background:#0b1225;color:var(--text);font:inherit;outline:none}input:focus,select:focus{border-color:var(--accent)}.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}.note{color:var(--muted);font-size:11px;margin-top:10px}.hidden{display:none!important}.success{border:1px solid #2b785f;background:#123b32;padding:14px;border-radius:12px;margin-top:14px}.code{font-size:22px;font-weight:850;letter-spacing:2px;color:var(--accent);margin:5px 0}.table{width:100%;border-collapse:collapse;font-size:13px}.table td,.table th{padding:12px 7px;text-align:left;border-bottom:1px solid var(--line)}.table th{color:var(--muted);font-weight:600}.barrow{display:grid;grid-template-columns:100px 1fr 35px;gap:10px;align-items:center;margin:13px 0;font-size:12px}.bar{height:8px;background:#293653;border-radius:9px;overflow:hidden}.bar span{height:100%;display:block;background:var(--accent2);border-radius:9px}.footer{padding:30px 0;color:var(--muted);font-size:11px;text-align:center}.tag{display:inline-block;background:#26334f;color:var(--accent2);padding:4px 8px;border-radius:7px;font-size:11px;margin-bottom:10px}
+@media(max-width:760px){.wrap{padding:16px}.hero,.layout{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.nav{align-items:flex-start;flex-direction:column}.two{grid-template-columns:1fr}h1{letter-spacing:-1px}}
+</style>
+</head>
+<body><main class="wrap">
+<header class="nav"><div class="brand">AI PROJECT <span>LAUNCHPAD</span></div><div class="pill">NxtWave Growth Challenge · Interactive prototype</div></header>
+<section class="hero">
+<div><div class="eyebrow">Free online workshop · 60 minutes</div><h1>Build your first<br><span style="color:var(--accent)">AI project.</span></h1><div class="sub">No more “I’ll learn AI someday.” Build a beginner-friendly project in one focused session, understand the workflow, and leave with a starting point for your portfolio.</div><div class="actions"><button class="primary" onclick="document.getElementById('register').scrollIntoView({behavior:'smooth'})">Reserve my free spot ↗</button><button class="secondary" onclick="document.getElementById('how').scrollIntoView({behavior:'smooth'})">How it works</button></div><div class="note">Designed for final-year engineering students. No prior AI project experience required.</div></div>
+<div class="heroCard"><div class="tag">CAMPAIGN GOAL</div><div class="mini">Target registrations</div><div class="big"><span id="heroCount">170</span> / 500</div><div class="progress"><span id="heroProgress"></span></div><div class="mini">Illustrative demo figures — not live NxtWave campaign data.</div><hr style="border:0;border-top:1px solid var(--line);margin:20px 0"><div style="display:flex;justify-content:space-between;gap:10px"><div><div class="mini">Time needed</div><b>60 minutes</b></div><div><div class="mini">Entry level</div><b>Beginner-friendly</b></div></div></div>
+</section>
+<section id="how"><div class="sectionTitle"><h2>What you’ll get</h2><p>Clear outcome beats vague hype.</p></div><div class="grid">
+<div class="metric"><div class="tag">01 · BUILD</div><h3>One guided AI project</h3><div class="label">Follow a practical, beginner-oriented workflow from idea to first working result.</div></div>
+<div class="metric"><div class="tag">02 · UNDERSTAND</div><h3>Know the moving parts</h3><div class="label">See how data, a model, and an interface fit together without getting lost in theory.</div></div>
+<div class="metric"><div class="tag">03 · TAKE AWAY</div><h3>A next-step roadmap</h3><div class="label">Leave with a concrete direction to improve the project and explain it in interviews.</div></div>
+</div></section>
+<div class="sectionTitle"><h2>Register and invite your classmates</h2><p>Prototype form · no data is sent to a server</p></div>
+<section class="layout">
+<div class="panel" id="register"><h3>Save your free spot</h3><p>Complete the form to generate your demo referral code.</p>
+<form id="regForm">
+<div class="field"><label for="name">Full name</label><input id="name" required placeholder="e.g. Ananya Rao"></div>
+<div class="two"><div class="field"><label for="email">Email</label><input id="email" type="email" required placeholder="you@college.edu"></div><div class="field"><label for="college">College</label><input id="college" required placeholder="College name"></div></div>
+<div class="two"><div class="field"><label for="branch">Engineering branch</label><select id="branch" required><option value="">Choose branch</option><option>CSE / IT</option><option>ECE / EEE</option><option>Mechanical</option><option>Civil</option><option>Other</option></select></div><div class="field"><label for="year">Study year</label><select id="year" required><option value="">Choose year</option><option>Final year</option><option>Pre-final year</option><option>Other</option></select></div></div>
+<div class="field"><label for="source">Where did you hear about this?</label><select id="source"><option>College WhatsApp group</option><option>Faculty / department</option><option>Technical club</option><option>Friend referral</option><option>Instagram / LinkedIn</option><option>Email</option></select></div>
+<div class="field"><label for="ref">Referral code (optional)</label><input id="ref" placeholder="e.g. AI7K2"></div>
+<button class="primary" type="submit" style="width:100%">Create demo registration</button><div class="note">This is a portfolio prototype. Do not enter real sensitive information.</div>
+</form><div id="success" class="success hidden"><b>Demo registration created.</b><div class="mini">Your referral code</div><div class="code" id="myCode">AI7K2</div><div class="note">Share the workshop with classmates to demonstrate the referral loop.</div><button class="secondary" onclick="shareInvite()">Copy / share invite</button> <button class="secondary" onclick="copyCode()">Copy code</button><div id="shareMsg" class="note"></div></div>
+</div>
+<div class="panel"><h3 id="how">The growth loop</h3><p>Make every registration a potential new distribution point.</p>
+<div class="barrow"><span>Club leads</span><div class="bar"><span style="width:90%"></span></div><b>140</b></div>
+<div class="barrow"><span>WhatsApp</span><div class="bar"><span style="width:82%"></span></div><b>130</b></div>
+<div class="barrow"><span>Faculty</span><div class="bar"><span style="width:64%"></span></div><b>100</b></div>
+<div class="barrow"><span>Referrals</span><div class="bar"><span style="width:55%"></span></div><b>80</b></div>
+<div class="barrow"><span>Email/social</span><div class="bar"><span style="width:34%"></span></div><b>50</b></div>
+<div class="success" style="background:#171f38;border-color:var(--line)"><b>Measurement rule</b><div class="note">Tag every channel, deduplicate by email in a real backend, and move effort toward channels with the lowest cost per valid registration.</div></div>
+</div>
+</section>
+<div class="sectionTitle"><h2>Campaign control room</h2><p>Editable demo dashboard</p></div>
+<section class="grid">
+<div class="metric"><div class="label">Demo registrations</div><div class="num" id="regCount">170</div><div class="label">Target: 500</div></div>
+<div class="metric"><div class="label">Target progress</div><div class="num" id="progressText">34%</div><div class="label">Illustrative scenario</div></div>
+<div class="metric"><div class="label">Demo referral registrations</div><div class="num" id="refCount">80</div><div class="label">Attribution should be verified in production</div></div>
+</section>
+<section class="panel" style="margin-top:14px"><h3>Seven-day operating plan</h3><p>Focus on three repeatable distribution channels, not 20 disconnected tactics.</p><table class="table"><thead><tr><th>Day</th><th>Action</th><th>Signal to monitor</th></tr></thead><tbody>
+<tr><td>1</td><td>Recruit student club / class ambassadors; provide ready-to-forward copy and tracking tags.</td><td>Ambassadors activated</td></tr>
+<tr><td>2</td><td>Seed relevant college WhatsApp groups through admins; avoid unsolicited mass messaging.</td><td>Visits and registrations by link</td></tr>
+<tr><td>3</td><td>Ask faculty / placement cells to share a concise student-benefit message.</td><td>Valid registrations by college</td></tr>
+<tr><td>4</td><td>Publish a short project teaser and a sample outcome on student-facing social channels.</td><td>Click-to-registration rate</td></tr>
+<tr><td>5</td><td>Activate personal referral links and a transparent, non-monetary recognition board.</td><td>Invites and referred sign-ups</td></tr>
+<tr><td>6</td><td>Send one reminder through opted-in channels; address common questions.</td><td>Reminder conversion</td></tr>
+<tr><td>7</td><td>Final reminder, check duplicates, and report channel performance.</td><td>500 valid registrations target</td></tr>
+</tbody></table></section>
+<div class="footer">AI Project Launchpad · Growth Intern submission prototype · Demo-only metrics and local browser interactions.</div>
+</main>
+<script>
+const $=id=>document.getElementById(id);
+let registrations=170, referralRegs=80, myReferralCode='';
+function updateDash(){const pct=Math.min(100,Math.round(registrations/500*100));$('heroCount').textContent=registrations;$('heroProgress').style.width=pct+'%';$('regCount').textContent=registrations;$('progressText').textContent=pct+'%';$('refCount').textContent=referralRegs;}
+function code(){return 'AI'+Math.random().toString(36).substring(2,5).toUpperCase();}
+$('regForm').addEventListener('submit',e=>{e.preventDefault();registrations++;if($('ref').value.trim())referralRegs++;myReferralCode=code();$('myCode').textContent=myReferralCode;$('success').classList.remove('hidden');$('success').scrollIntoView({behavior:'smooth',block:'nearest'});updateDash();});
+function inviteText(){return `I'm joining NxtWave's free online workshop: “Build Your First AI Project in 60 Minutes”. Beginner-friendly and practical. Register here: [add your real workshop link] Use referral code ${myReferralCode}.`;}
+async function copyCode(){try{await navigator.clipboard.writeText(myReferralCode);$('shareMsg').textContent='Referral code copied.'}catch(e){$('shareMsg').textContent='Your code is '+myReferralCode+' — copy it manually.'}}
+async function shareInvite(){const t=inviteText();try{await navigator.clipboard.writeText(t);$('shareMsg').textContent='Invite copied. Replace the placeholder with the real registration link before sharing.'}catch(e){$('shareMsg').textContent=t}}
+updateDash();
+</script></body></html>
